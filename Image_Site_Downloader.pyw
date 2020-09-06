@@ -3,8 +3,7 @@
 '''
 Write a program that goes to a photo-sharing site like Flickr or Imgur,
 searches for a category of photos, and then downloads all the resulting
-images. You could write a program that works with any photo site that has
-a search feature.
+images. 
 
 '''
 
@@ -12,7 +11,7 @@ import requests, sys, bs4, os, pprint
 from selenium import webdriver #need selenium b/c html containing img info appears from JS
 
 #set cwd
-cwd = '/home/xubuntu/Desktop/Automate The Boring Stuff/Web Scraping Chapter/Image_Site_Downloader/'
+cwd = '/' #set the directory you wish to use for this project
 os.chdir(cwd)
 #make a folder for images
 os.makedirs(cwd + 'downloadedImages/', exist_ok=True)
